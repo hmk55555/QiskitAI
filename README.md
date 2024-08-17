@@ -5,7 +5,15 @@ Machine Learning Algorithms implemented using Qiskit Machine Learning SDK.
 Implementing and comparing different quantum machine learning algorithms and analyzing current constraints.
 
 ## Input
-Input is an MNIST dataset consisting of handwritten digits. To represent the classical data for quantum processing, we reduce the image dimensions from 28x28 to 4x4 so that we can use 16 qubits to represent 1 image. The images are processed through the ZZFeatureMap, which encodes classical data into a quantum representation that can then be processed by the quantum algorithm.
+Input is an MNIST dataset consisting of handwritten digits. To represent the classical data for quantum processing, we reduce the image dimensions from 28x28 image
+
+![28x28 Image](images/fullImage.png) 
+
+to 4x4 image
+
+![4x4 Image](images/smallImage.png) 
+
+so that we can use 16 qubits to represent 1 image. The images are processed through the ZZFeatureMap, which encodes classical data into a quantum representation that can then be processed by the quantum algorithm.
 
 ## Algorithms
 We use 2 different circuits
