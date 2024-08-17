@@ -13,7 +13,7 @@ We use 2 different circuits
 * [QCNN-MNIST.ipynb](./QCNN-MNIST.ipynb) - Implements Convolutional and Pooling layers to create a Quantum Convolutional Neural Network (QCNN)
 
 ## Output
-The model returns the value it predicts to be in the image. Both models are multiclass, classifying 4 different digits.
+The model returns the number it predicts to be in the image. Both models are multiclass, classifying 4 different digits.
 
 ## Current Observations
 No significant differences were noticed in training time. Both the QNN and QCNN had similar training times for the same number of epochs.
