@@ -12,6 +12,9 @@ We use 2 different circuits
 * [QNN-MNIST.ipynb](./QNN-MNIST.ipynb) - Implements a simple Quantum Neural Network (QNN) with a simple Ansatz using RealAmplitudes with three reps, which contains the model parameters that need to be trained. 
 * [QCNN-MNIST.ipynb](./QCNN-MNIST.ipynb) - Implements Convolutional and Pooling layers to create a Quantum Convolutional Neural Network (QCNN)
 
+## Output
+The model returns the value it predicts to be in the image. Both models are multiclass, classifying 4 different digits.
+
 ## Current Observations
 No significant differences were noticed in training time. Both the QNN and QCNN had similar training times for the same number of epochs.
 
@@ -20,4 +23,4 @@ The QNN had a relatively low accuracy for the training dataset despite the objec
 The QCNN, on the other hand, suffered a different problem. The accuracy of the model on the training dataset was, in general, much higher than the accuracy of the testing dataset. This suggests that the model was being overfitted according to the training dataset. This is likely due to the low dimensionality (4x4) of the used dataset, impacting the ability of the model to learn patterns accordingly. This can be combated by increasing dimensionality or modifying the circuit. However, due to the limitation/size restriction on simulating quantum systems, any image greater than 4x4 had too many qubits to be processed.
 
 ## Future Aim / Next Steps
-As discussed, QNN performance can likely be increased by improving the complexity of the circuit. This might require letting the model train for a much longer period of time (multiple days) to be able to get a more effective accuracy. To improve QCNN performance, ways of encoding information more efficiently, rather than the 1 pixel: 1 qubit ratio, need to be used. Otherwise, limiting the number of epochs and expanding the utilized training dataset can be attempted.
+As discussed, QNN performance can likely be increased by improving the complexity of the circuit. This might require letting the model train for a much longer period of time (multiple days) to be able to get a more effective accuracy. To improve QCNN performance, ways of encoding information more efficiently, rather than the 1 pixel: 1 qubit ratio, need to be used. Otherwise, limiting the number of epochs and expanding the utilized training dataset can be attempted. Therefore, more training time is needed for both models.
