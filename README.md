@@ -17,7 +17,7 @@ so that we can use 16 qubits to represent 1 image. The images are processed thro
 
 ## Algorithms
 We use 2 different circuits
-* [QNN-MNIST.ipynb](./QNN-MNIST.ipynb) - Implements a simple Quantum Neural Network (QNN) with a simple Ansatz using RealAmplitudes with three reps, which contains the model parameters that need to be trained. 
+* [QNN-MNIST.ipynb](./QNN-MNIST.ipynb) - Implements a Quantum Neural Network (QNN) with a simple Ansatz using RealAmplitudes with three reps, which contains the model parameters that need to be trained. 
 * [QCNN-MNIST.ipynb](./QCNN-MNIST.ipynb) - Implements Convolutional and Pooling layers to create a Quantum Convolutional Neural Network (QCNN)
 
 ## Output
